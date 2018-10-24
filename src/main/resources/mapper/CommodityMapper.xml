@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xcy.dao.CommodityDao">
+
+    <select id="list" resultType="Commodity">
+        select
+        commodity_model,commodity_name,commodity_num,commodity_unit,commodity_unit_price,commodity_brand,
+        commodity_place,commodity_code,commodity_net_weight,commodity_gross_weight,commodity_box_num,commodity_po,
+        commodity_batch_num,commodity_receive_address,commodity_logistics_dealer
+        from commodity
+    </select>
+</mapper>
